@@ -9,8 +9,8 @@ const PropertyCard = ({ property, onFavourite, isFavourite, onCompare, isInCompa
             <p className={property.transaction === 'rent' ? 'for-rent' : 'for-sale'}>
                 For {property.transaction === 'rent' ? 'Rent' : 'Sale'}
             </p>
-            <i className='img-bk-icon fa-regular fa-less-than'></i>
-            <i className='img-fr-icon fa-regular fa-greater-than'></i>
+            <i className='img-bk-icon fa-solid fa-chevron-left'></i>
+            <i className='img-fr-icon fa-solid fa-chevron-right'></i>
         </div>
         <div className='prptes-card-detail'>
             <div className='prptes-detail-text'>
@@ -22,11 +22,11 @@ const PropertyCard = ({ property, onFavourite, isFavourite, onCompare, isInCompa
                         <p>{property.stats.beds} beds</p>
                     </div>
                     <div className='stats-item'>
-                        <i className="fa-solid fa-bath"></i>
+                        <i className="fa-solid fa-shower"></i>
                         <p>{property.stats.baths} baths</p>
                     </div>
                     <div className='stats-item'>
-                        <i className="fa-solid fa-ruler-combined"></i>
+                        <i className="fa-solid fa-vector-square"></i>
                         <p>{property.stats.sqft.toLocaleString()} sqft</p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const PropertyCard = ({ property, onFavourite, isFavourite, onCompare, isInCompa
                 <p>${property.price.toLocaleString()}{property.transaction === 'rent' ? '/mo' : ''}</p>
                 <div className='prptes-foot-icn'>
                     <i
-                        className="fa-regular fa-up-right-and-down-left-from-center pointer prop-icon"
+                        className="fa-solid fa-up-right-and-down-left-from-center pointer prop-icon"
                         title="View Details"
                         onClick={() => onExpand(property)}
                     ></i>
@@ -46,7 +46,7 @@ const PropertyCard = ({ property, onFavourite, isFavourite, onCompare, isInCompa
                         onClick={() => onFavourite(property.id)}
                     ></i>
                     <i
-                        className={`fa-regular fa-circle-plus pointer prop-icon ${isInCompare ? 'icon-active' : ''}`}
+                        className={`fa-solid fa-circle-plus pointer prop-icon ${isInCompare ? 'icon-active' : ''}`}
                         title={isInCompare ? 'Remove from Compare' : 'Add to Compare'}
                         onClick={() => onCompare(property)}
                     ></i>

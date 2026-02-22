@@ -17,7 +17,7 @@ export default function PropertyModal({ property, onClose }) {
                     </div>
                     <h2 className="modal-title">{property.title}</h2>
                     <p className="modal-location">
-                        <i className="fa-regular fa-location-dot"></i> {property.location}
+                        <i className="fa-solid fa-location-dot"></i> {property.location}
                     </p>
                     <div className="modal-stats">
                         <div className="modal-stat-item">
@@ -25,11 +25,11 @@ export default function PropertyModal({ property, onClose }) {
                             <span>{property.stats.beds} Bedrooms</span>
                         </div>
                         <div className="modal-stat-item">
-                            <i className="fa-solid fa-bath"></i>
+                            <i className="fa-solid fa-shower"></i>
                             <span>{property.stats.baths} Bathrooms</span>
                         </div>
                         <div className="modal-stat-item">
-                            <i className="fa-solid fa-ruler-combined"></i>
+                            <i className="fa-solid fa-vector-square"></i>
                             <span>{property.stats.sqft.toLocaleString()} sqft</span>
                         </div>
                     </div>

@@ -7,64 +7,46 @@ const Footer = () => {
         <div className='ft-expl'>
           <h2>Explore</h2>
           <div>
-            <i className='fa-regular fa-greater-than'></i>
-            <p>
-              <a href='#explorcty'>Las Vegas</a>
-            </p>
+            <i className='fa-solid fa-chevron-right'></i>
+            <p><a href='#explorcty'>Las Vegas</a></p>
           </div>
           <div>
-            <i className='fa-regular fa-greater-than'></i>
-            <p>
-              <a href='#explorpty'>Lagos</a>
-            </p>
+            <i className='fa-solid fa-chevron-right'></i>
+            <p><a href='#explorpty'>Lagos</a></p>
           </div>
           <div>
-            <i className='fa-regular fa-greater-than'></i>
-            <p>
-              <a href='#explorcty'>Dubai</a>
-            </p>
+            <i className='fa-solid fa-chevron-right'></i>
+            <p><a href='#explorcty'>Dubai</a></p>
           </div>
         </div>
         <div className='ft-cntct'>
           <h2>Contact</h2>
           <div>
-            <i className='fa-regular fa-location-dot'></i>
-            <p>
-              <a href='#contact'>Old School Lane, Akure</a>
-            </p>
+            <i className='fa-solid fa-location-dot'></i>
+            <p><a href='#contact'>Old School Lane, Akure</a></p>
           </div>
           <div>
-            <i className='fa-regular fa-phone'></i>
-            <p>
-              <a href='#contact'>Call</a>
-            </p>
+            <i className='fa-solid fa-phone'></i>
+            <p><a href='#contact'>Call</a></p>
           </div>
           <div>
-            <i className='fa-regular fa-envelope'></i>
-            <p>
-              <a href='#contact'>Email</a>
-            </p>
+            <i className='fa-solid fa-envelope'></i>
+            <p><a href='#contact'>Email</a></p>
           </div>
         </div>
         <div className='ft-lnk'>
           <h2>Quick Links</h2>
           <div>
-            <i className='fa-regular fa-house'></i>
-            <p>
-              <a href='#properties'>Properties</a>
-            </p>
+            <i className='fa-solid fa-house'></i>
+            <p><a href='#properties'>Properties</a></p>
           </div>
           <div>
-            <i className='fa-regular fa-user-group'></i>
-            <p>
-              <a href='#agent'>Agents</a>
-            </p>
+            <i className='fa-solid fa-users'></i>
+            <p><a href='#agent'>Agents</a></p>
           </div>
           <div>
-            <i className='fa-regular fa-link'></i>
-            <p>
-              <a href='#contact'>About us</a>
-            </p>
+            <i className='fa-solid fa-link'></i>
+            <p><a href='#contact'>About us</a></p>
           </div>
         </div>
       </div>

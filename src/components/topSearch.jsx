@@ -50,7 +50,7 @@ export default function TopSearch({ onSearch }) {
             placeholder='Location'
             type='text'
           />
-          <span className='icon1 fa-regular fa-location-dot'></span>
+          <span className='icon1 fa-solid fa-location-dot'></span>
         </div>
         <select
           name='type'

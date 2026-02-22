@@ -16,7 +16,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl1} alt='' />
             <p className='s-prptes'>7 Properties</p>
             <p className='h-prptes'>Vacation</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -24,7 +24,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl2} alt='' />
             <p className='s-prptes'>7 Properties</p>
             <p className='h-prptes'>House</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -32,7 +32,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl3} alt='' />
             <p className='s-prptes'>7 Properties</p>
             <p className='h-prptes'>House</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -40,7 +40,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl4} alt='' />
             <p className='s-prptes'>7 Properties</p>
             <p className='h-prptes'>House</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -48,7 +48,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl5} alt='' />
             <p className='s-prptes'>7 Properties</p>
             <p className='h-prptes'>House</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -56,7 +56,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl6} alt='' />
             <p className='s-prptes'>7 Properties</p>
             <p className='h-prptes'>House</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -64,7 +64,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl7} alt='' />
             <p className='s-prptes'>7 Properties</p>
             <p className='h-prptes'>House</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img expl-col2-img' src={Expl8} alt='' />
             <p className='s-prptes'>Las Vegas</p>
             <p className='h-prptes'>7 Properties</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -86,7 +86,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl9} alt='' />
             <p className='s-prptes'>Dubai</p>
             <p className='h-prptes'>7 Properties</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -94,7 +94,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl10} alt='' />
             <p className='s-prptes'>Las Vegas</p>
             <p className='h-prptes'>7 Properties</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -102,7 +102,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl11} alt='' />
             <p className='s-prptes'>Las Vegas</p>
             <p className='h-prptes'>7 Properties</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
           <div className='expl-items grow-pix'>
@@ -110,7 +110,7 @@ export default function explore({ Expl1, Expl2, Expl3, Expl4, Expl5, Expl6, Expl
             <img className='expl-img' src={Expl12} alt='' />
             <p className='s-prptes'>Dubai</p>
             <p className='h-prptes'>7 Properties</p>
-            <i className='i-prptes fa-regular fa-greater-than'></i>
+            <i className='i-prptes fa-solid fa-chevron-right'></i>
             {/* </div> */}
           </div>
         </div>

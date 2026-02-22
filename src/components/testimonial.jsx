@@ -15,11 +15,11 @@ const Testimonial = ({ Tsmny1, Tsmny2, Tsmny3 }) => {
               <div className="card-user-dtil">
                 <p>Elizabeth Charles</p>
                 <div className="rating">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
                 </div>
               </div>
             </div>
@@ -34,11 +34,11 @@ const Testimonial = ({ Tsmny1, Tsmny2, Tsmny3 }) => {
               <div className="card-user-dtil">
                 <p>David Karley</p>
                 <div className="rating">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
                 </div>
               </div>
             </div>
@@ -53,11 +53,11 @@ const Testimonial = ({ Tsmny1, Tsmny2, Tsmny3 }) => {
               <div className="card-user-dtil">
                 <p>John Marsden</p>
                 <div className="rating">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
+                  <span className="fa-solid fa-star checked"></span>
                 </div>
               </div>
             </div>
