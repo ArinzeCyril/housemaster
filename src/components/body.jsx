@@ -4,12 +4,7 @@ import WhyUs from './whyUs'
 import Testimonial from './testimonial'
 import Agents from './agents'
 import NewsLetter from './newsLetter'
-import Prptes1 from '../img/prptes/prptes1.png'
-import Prptes2 from '../img/prptes/prptes2.png'
-import Prptes3 from '../img/prptes/prptes3.png'
-import Prptes4 from '../img/prptes/prptes4.png'
-import Prptes5 from '../img/prptes/prptes5.png'
-import Prptes6 from '../img/prptes/prptes6.png'
+
 import Expl1 from '../img/expl/expl1.png'
 import Expl2 from '../img/expl/expl2.png'
 import Expl3 from '../img/expl/expl3.png'
@@ -29,18 +24,10 @@ import Agnt1 from '../img/agnt/agnt1.png';
 import Agnt2 from "../img/agnt/agnt2.png"
 import Agnt3 from "../img/agnt/agnt3.jpg"
 
-
-const Body = () => {
+const Body = ({ properties }) => {
   return (
     <div className='body'>
-      <Properties
-        Prptes1={Prptes1}
-        Prptes2={Prptes2}
-        Prptes3={Prptes3}
-        Prptes4={Prptes4}
-        Prptes5={Prptes5}
-        Prptes6={Prptes6}
-      />
+      <Properties properties={properties} />
       <Explore
         Expl1={Expl1}
         Expl2={Expl2}

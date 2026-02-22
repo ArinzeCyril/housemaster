@@ -1,114 +1,93 @@
 import React, { useState } from 'react'
 
-export default function TopSearch() {
-  const[active, setActive] = useState({
-    buy: false,
-    rent: false,
-    showSubmit: false
+export default function TopSearch({ onSearch }) {
+  const [activeTab, setActiveTab] = useState('rent') // 'buy' or 'rent'
+  const [filters, setFilters] = useState({
+    location: '',
+    type: 'type',
+    budget: ''
   })
-  const [location, setLocation] = useState('')
-  let message
-  const handleSubmit = () => {
-      setActive({
-        ...active,
-        showSubmit: !active.showSubmit,
-      })
+  const [showSubmitMsg, setShowSubmitMsg] = useState(false)
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target
+    setFilters(prev => ({ ...prev, [name]: value }))
   }
-  const handleLocChange = e => setLocation(e.target.value)
-  const handleTransaction = (action) => {
-    action === "buy" &&
-      setActive({
-        ...active,
-        buy: true,
-        rent: false,
-      })
-    action === "rent" &&
-      setActive({
-        ...active,
-        rent: true,
-        buy: false,
-      })
-    action === "submit" && handleSubmit()
-    console.log(message);
-    console.log(location.length);
-    console.log(`${action} was clicked ${active.showSubmit}`)
-  }
-  const handleShowSubmit = (show) => {
-    setActive({
-      ...active,
-      showSubmit: false,
-    })
-    console.log(`${show} was clicked ${active.showSubmit}`);
+
+  const handleSearch = (e) => {
+    e.preventDefault()
+    onSearch({ ...filters, transaction: activeTab })
+    setShowSubmitMsg(true)
+    setTimeout(() => setShowSubmitMsg(false), 3000)
   }
 
   return (
-    <div
-      onClick={() => {
-        handleShowSubmit()
-      }}
-      className='top-search'
-    >
+    <div className='top-search' onClick={() => setShowSubmitMsg(false)}>
       <div
         onClick={(e) => {
-          !active.showSubmit && e.stopPropagation()
-          handleTransaction("rent")
+          e.stopPropagation()
+          setActiveTab('rent')
         }}
-        className={active.rent ? "pointer top-btn active" : "pointer top-btn"}
+        className={activeTab === 'rent' ? "pointer top-btn active" : "pointer top-btn"}
       >
         Rent
       </div>
       <div
         onClick={(e) => {
           e.stopPropagation()
-          handleTransaction("buy")
+          setActiveTab('buy')
         }}
-        className={active.buy ? "pointer top-btn active" : "pointer top-btn"}
+        className={activeTab === 'buy' ? "pointer top-btn active" : "pointer top-btn"}
       >
         Buy
       </div>
       <div className='top-input'>
         <div>
           <input
-            onChange={handleLocChange}
+            name="location"
+            value={filters.location}
+            onChange={handleInputChange}
             placeholder='Location'
             type='text'
           />
           <span className='icon1 fa-regular fa-location-dot'></span>
         </div>
-        <select name='type' id='top-type'>
-          <option value='type' selected>
-            Type
-          </option>
+        <select
+          name='type'
+          id='top-type'
+          value={filters.type}
+          onChange={handleInputChange}
+        >
+          <option value='type'>Type</option>
           <option value='duplex'>Duplex</option>
           <option value='bungalow'>Bungalow</option>
           <option value='apartment'>Apartment</option>
+          <option value='house'>House</option>
         </select>
         <div>
-          <input placeholder='Budget' type='text' />
+          <input
+            name="budget"
+            value={filters.budget}
+            onChange={handleInputChange}
+            placeholder='Max Budget'
+            type='text'
+          />
           <span className='icon2'>$</span>
         </div>
         <button className='pointer'
-          onClick={(e) => {
-            e.stopPropagation()
-            handleTransaction("submit")
-          }}
+          onClick={handleSearch}
           id='top-search'
         >
           Search
         </button>
-        <span
-          className={
-            active.showSubmit ? "show-info-onsubmit" : "hide-info-onsubmit"
-          }
-        >
-          {location.length === 0
-            ? "Please Enter a Location"
-            : active.buy
-            ? `No property is available for sale in the selected location`
-            : active.rent
-            ? `No rental property is available in selected location`
-            : "Click either buy or rent to perform a search"}
-        </span>
+
+        {showSubmitMsg && (
+          <span className="show-info-onsubmit">
+            {filters.location.length === 0
+              ? "Please Enter a Location"
+              : `Searching for ${activeTab}als in ${filters.location}...`}
+          </span>
+        )}
       </div>
     </div>
   )
