@@ -957,6 +957,33 @@ footer {
   .hr {
     display: none;
   }
+
+  /* Why Housemaster section */
+  .why-brwn {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .why-texts {
+    width: 100%;
+  }
+
+  .why-t3 {
+    margin-left: 0;
+  }
+
+  .why-form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .why-fn,
+  .why-ln,
+  .why-lctn,
+  .why-pty {
+    width: 100%;
+  }
 }
 
 .pointer {
