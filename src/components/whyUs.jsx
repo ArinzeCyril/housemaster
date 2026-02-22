@@ -12,7 +12,7 @@ const WhyUs = () => {
   })
   const [message, setMessage] = useState("")
 
-  const handleSubmit =() =>{
+  const handleSubmit = () => {
     setEnquiry({ ...enquiry, submitted: true })
     messager()
   }
@@ -23,16 +23,16 @@ const WhyUs = () => {
       ...enquiry,
       [fieldName]: e.target.value
     })
-    console.log({[fieldName]: e.target.value})
+    console.log({ [fieldName]: e.target.value })
   }
 
-  const {submitted, type, firstname, location, property} = enquiry
+  const { submitted, type, firstname, location, property } = enquiry
   const messager = () => {
     const validType = type === "select"
     const validName = firstname.length < 1
     const validLoc = location.length < 1
     const validProp = property.length < 1
-    const allValid = !validType && !validName && !validLoc &&  !validProp
+    const allValid = !validType && !validName && !validLoc && !validProp
     validProp && setMessage("Please select a PROPERTY TYPE")
     validLoc && setMessage("Please choose an enquiry LOCATION")
     validName && setMessage("Please enter your FIRST NAME")
@@ -56,14 +56,14 @@ const WhyUs = () => {
           </div>
           <div className='why-text why-t2'>
             <p>01</p>
-            <p>A Good Environment</p>
-            <p>helps with Productivity</p>
+            <p>Trusted by Thousands</p>
+            <p>since 2010</p>
             <hr />
           </div>
           <div className='why-text why-t3'>
             <p>02</p>
-            <p>A Good Environment</p>
-            <p>helps with Productivity</p>
+            <p>Verified Properties</p>
+            <p>with detailed insights</p>
             <hr />
           </div>
         </div>

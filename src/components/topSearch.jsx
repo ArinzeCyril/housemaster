@@ -80,7 +80,7 @@ export default function TopSearch() {
             Type
           </option>
           <option value='duplex'>Duplex</option>
-          <option value='bongallow'>Bongalow</option>
+          <option value='bungalow'>Bungalow</option>
           <option value='apartment'>Apartment</option>
         </select>
         <div>
@@ -107,7 +107,7 @@ export default function TopSearch() {
             ? `No property is available for sale in the selected location`
             : active.rent
             ? `No rental property is available in selected location`
-            : "Click either buy or rent to perform a serch"}
+            : "Click either buy or rent to perform a search"}
         </span>
       </div>
     </div>

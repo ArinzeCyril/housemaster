@@ -829,34 +829,101 @@ footer{
   left: 4rem;
 }
 
-.mobile-view-mq {
-  display: none;
-}
-
+/* Responsive Styles */
 @media (max-width: 770px) {
-  .top,
-  .body,
-  footer  {
+  .top-set {
+    margin: 0 1rem;
+    padding: 2rem 0;
+  }
+
+  nav {
+    left: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+  }
+
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  .nav-content {
+    display: none; /* Hide nav links on mobile for now, or we could add a burger menu */
+  }
+
+  .top-content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .top-content-text {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #hero-pix {
+    width: 100%;
+  }
+
+  .top-search {
+    width: 100%;
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .top-input {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .top-input > div, .top-input select, #top-search {
+    width: 100% !important;
+  }
+
+  .body {
+    padding: 1rem;
+  }
+
+  .prptes-card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .expl-cards, .expl-cty-cards, .cards, .agnt-cards {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card, .agnt-card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .expl-sd-logo {
     display: none;
   }
 
-  .mobile-view-mq {
-    padding: 2rem;
-    min-height: 100vh;
-    box-sizing: border-box;
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  .expl-cards {
+    margin-left: 0;
   }
 
-  .mobile-view-mq > p:first-child {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: red;
+  .ft-navs {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 2rem;
+  }
+
+  .dev-ft {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hr {
+    display: none;
   }
 }
 

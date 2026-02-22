@@ -1,4 +1,4 @@
-import Properties from './prperties'
+import Properties from './properties'
 import Explore from './explore'
 import WhyUs from './whyUs'
 import Testimonial from './testimonial'
